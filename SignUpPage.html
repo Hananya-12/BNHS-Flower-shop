@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.bg-img {
+  /* The image used */
+  background-image: url("https://img.freepik.com/free-photo/closeup-colorful-flower-bouquets-containers-outdoor-shop_181624-28754.jpg?w=2000");
+  min-height: 710px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 500px;
+  padding: 16px;
+  background-color: white;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.btn:hover {
+  opacity: 1;
+}
+h1{
+	color: seagreen;
+	font-family: timesnewroman;
+}
+</style>
+</head>
+<body>
+<center><h1>BNHS Flower Shop </h1><center>
+<h2>SignUp and try the power of flowers. &#128516;</h2>
+<div class="bg-img">
+  <form method="GET" action="/SignupSubmit" class="container">
+    <h1>SignUp</h1>
+    <label for="fname"><b>Firstname</b></label>
+    <input type="text" placeholder="Enter Firstname" name="fname" required>
+    <label for="lname"><b>Lastname</b></label>
+    <input type="text" placeholder="Enter Lastname" name="lname" required>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <label for="ps"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="ps" required>
+    <label for="cps"><b>ConfirmPassword</b></label>
+    <input type="password" placeholder="confirm Password" name="cps" required>
+    <button type="submit" class="btn">SignUp</button>
+    <h5>Already Registered?<a href="http://localhost:1805/Loginpage">Login</a></h5>
+  </form>
+</div>
+</body>
+</html>
