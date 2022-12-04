@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/008/450/983/non_2x/seamless-pattern-with-abstract-pink-line-roses-simple-hand-drawn-flowers-aesthetic-background-tender-template-for-cover-wedding-design-floral-wallpaper-wrapping-illustration-vector.jpg");
+  margin: 0;
+  padding: 0;
+  color: #1D1F20;
+  background-color: #ffffff;
+  font-family: font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+.main-container {
+  position: relative; 
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+/*header*/
+header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  overflow: auto;
+  margin: 0;
+  padding: 30px 0px 30px 5px;
+  background-color: #ffeaea;
+}
+header > h3 {
+  float: left;
+  color: #6C5347;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 40px;
+  border: 2px solid #6C5347;
+}
+.site-menu {
+  width: auto;
+  overflow: auto;
+}
+.site-menu > ul {
+  float: right;
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+ul > li {
+  float: left;
+  list-style: none;
+  margin: 0 15px;
+  padding: 0;
+}
+ul > li:nth-child(4) {
+  margin-right: 8px;
+}
+li > a {
+  color: #6C5347;
+}
+a:link { 
+  color: #6C5347;
+  text-decoration: none;
+}
+a:visited {
+  color: #6C5347;
+}
+a:hover {
+  color: #997e6f;
+}
+a:active {
+  color: #BC8F8F;
+}
+/*content*/
+div.content {
+  position: relative; 
+  top: 0;
+  clear: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+div.banner {
+  position: relative;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+.banner-img {
+  position: relative;
+  background-repeat: repeat;
+  padding: 0px 0px 0px 40px;
+}
+.text-banner {
+  position: absolute;
+  opacity: 0.9;
+  top: 125px;
+  width: 100%;
+  text-align: center;
+  background-color: #1D1F20;
+}
+.text-banner > h2 {
+  color: #fff;
+  font-size: 2.25em; 
+  margin: 0 0 3px;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.text-banner > h3 {
+  color: #fff;
+  margin: 1500 1000 100px;
+  padding: 15px;
+  text-align: center;
+  font-style: italic;
+  font-weight: lighter;
+}
+article {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #fff;
+}
+section {
+  width: 100%;
+  margin: 50px 50px 10px 10px;
+  padding: 55px 0;
+  overflow: auto;
+}
+h2.section-title {
+  width: 30%;
+  color: #6C5347;
+  font-size: 2.25em; 
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #6C5347;
+}
+ul.deals-list {
+  position: relative;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+.deals-list > li {
+  position: relative;
+  top: 0;
+  margin: 0;
+  padding: 30px 45px;
+}
+.deals-list > li:last-child {
+  padding-bottom: 0px;
+}
+h3.deals-title {
+  width: 150px;
+  color: #6C5347;
+  margin: 0 auto;
+  padding-bottom: 6px;
+}
+p.deals-text {
+  font-weight: lighter;
+}
+section > div {
+  width: 75%;
+  margin: 0 auto;
+  padding: 10px;
+  overflow: auto;
+}
+/* occasions */
+#occasions {
+  padding-bottom: 0;
+}
+/*.wrapper {
+  margin-top: 55px;
+  padding: 0px;
+}*/
+div.occasion-list {
+  float: left;
+  width: 30%;
+  margin: 0 10px;
+  padding: 20px 15px;
+}
+.occasion-list li {
+  margin-bottom: 30px;
+}
+.fa {
+  color: #FDA83E;
+  margin-right: 3px;
+}
+/* info-contact-about us */
+#contact-container {
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  overflow: auto;
+}
+section#info {
+  position: relative;
+  top: 0;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+.about-text {
+  width: 45%;
+  margin: 0;
+  padding: 0 30px;
+  display: inline-block;
+  text-align: justify;
+  color: #6C5347;
+  border-right: 1px solid #FDA83E;
+}
+.about-text > h3 {
+  text-align: center;
+  margin: 0;
+  padding: 15px 0 10px;
+}
+.about-text > p {
+  font-weight: lighter;
+}
+.info-list {
+  margin: 0;
+  padding: 0 0 30px 0;
+  overflow: auto;
+}
+h6.info-title {
+  width: 18%;
+  font-weight: lighter;
+  text-transform: uppercase;
+  border-bottom: 1px solid #FDA83E;
+}
+.info-list > li {
+  float: left;
+  margin-bottom: 10px;
+  padding: 0;
+}
+/* contact form */
+.contact-form {
+  width: 45%;
+  margin: 0 0 0 25px;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+form {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  font-weight: lighter;
+}
+label {
+  float: left;
+  clear: left;
+  margin: 0;
+  padding: 2px 0;
+}
+input, textarea {
+  width: 98%;
+  border-radius: 5px;
+  padding: 5px;
+}
+button {
+  width: 99%;
+/*   float: left; */
+/*   clear: left; */
+  margin: 8px 0 0;
+  padding: 10px 0;
+  border-radius: 5px;
+  background-color: #FDA83E;
+  color: #fff;
+}
+/* footer */
+div#footer {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 30px 0 0 0;
+  padding: 0;
+  width: 100%;
+  overflow: auto;
+  background-color: #1D1F20;
+  font-size: 12px;
+}
+div.ft-container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px 0;
+/*   background-color: lightBlue; */
+  overflow: auto;
+}
+div.social-media, div.product-list, div.company-info {
+  max-width: 35%;
+  margin: 0 15px;
+  padding: 10px 12px;
+  display: inline-block;
+  color: #fff;
+  float: left;
+/*   background-color: pink; */
+}
+.column {
+  float: left;
+  width: 23.33%;
+  padding: 3px;
+}
+</style>
+</head>
+<body>
+<div class="main-container"> 
+  <header>
+    <h3>Hello!<br>Welcome to BNHS's Flower Shop</h3>
+
+    <nav class="site-menu">
+      <ul>
+        <li><a href="#"><h4>Home</h4></a></li>
+        <li><a href="#deals-content"><h4>Today's Flowers</h4></a></li>
+        <li><a href="#contact-container"><h4>Contact Us</h4></a></li>
+        <li><a href="#contact-container"><h4>Cart</h4></a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--end of site menu-->
+  <div class="content">
+    <div class="banner">
+      <img src="https://wallpapersmug.com/download/1600x900/9fe8dd/garden-rose-flowers.jpg" alt="" class="banner-img"/>
+      <div class="text-banner">
+        <h3>You bring the love. We’ll bring the flowers.</h3>
+        <a href="#deals-content"><h2 style="color:white; border-color: white;" class="section-title">Florist Choice &#10084</h2></a><br>
+        <a href="#birthday"><h2 style="color:white; border-color: white;" class="section-title">Birthday  &#127881;</h2></a><br>
+        <a href="#Christmas"><h2 style="color:white; border-color: white;" class="section-title">Christmas  &#127876;</h2></a><br>
+        <a href="#Funeral"><h2 style="color:white; border-color: white;" class="section-title">Sympathy and Funeral &#128144;</h2></a><br>
+        <a href="#New Baby"><h2 style="color:white; border-color: white;" class="section-title">New Baby  &#128118;</h2></a><br><br>
+      </div>
+    </div> 
+    <!-- end of banner -->
+    <article>
+      <section id="deals-content">
+        <h2 class="section-title">Florist Choice</h2>
+        <div class="wrapper">
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://preferefleur.com/image/cache/catalog/2021/IMG_0190-500x500.jpg" style="width:100%">
+            </label>
+            <h4>dreamy cloud<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://cdn.igp.com/f_auto,q_auto,t_pnopt12prodlp/products/p-assorted-10-gerberas-in-basket-arrangement-112354-m.jpg" style="width:100%">
+            </label>
+            <h4>10 Gerberas in Basket<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://cdn.igp.com/f_auto,q_auto,t_pnopt12prodlp/products/p-beautiful-mix-of-roses-94046-m.jpg" style="width:100%">
+            </label>
+            <h4>Mixed Roses Flower Bouquet<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://cdn.igp.com/f_auto,q_auto,t_pnopt9prodlp/products/p-gorgeous-purple-orchids-pink-roses-in-basket-arrangement-112341-m.jpg" style="width:100%">
+            </label>
+            <h4>Purple Orchids & Pink Roses<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://cakeflowerngifts.com/product-images/1652087766-21-pink-red-roses-4-purple-orchids-in-basket.jpg" style="width:100%">
+            </label>
+            <h4>21 pink red roses 4 purple orchids in basket<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://cdn.igp.com/f_auto,q_auto,t_pnopt12prodlp/products/p-pink-bloom-arrangement-178371-m.jpg" style="width:100%">
+            </label>
+            <h4>Pink Bloom Arrangement<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://cdn.igp.com/f_auto,q_auto,t_pnopt12prodlp/products/p-bunch-of-6-pink-oriental-lilies-64074-m.jpg" style="width:100%">
+            </label>
+            <h4>Bunch of 6 Pink Oriental Lilies<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://www.fnp.com/images/pr/x/v20210121175106/beautiful-red-roses-bunch-in-love-you-sticker-vase_1.jpg" style="width:100%">
+            </label>
+            <h4>Roses Bunch In Love You Sticker Vase<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <a href="#contact-container"><button>Add to cart</button></a>
+      </section>
+
+      <section id="birthday">
+        <h2 class="section-title">Birthday</h2>
+        <div class="wrapper">
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://res.cloudinary.com/ufn/image/upload/c_pad,f_auto,fl_progressive,h_500,w_445/hqmq232b16otrz5xig4k.jpg" style="width:100%">
+            </label>
+            <h4>Hello Beautiful Lavender Rose Bouquet<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://res.cloudinary.com/ufn/image/upload/c_pad,f_auto,fl_progressive,h_500,w_445/hugaccntwrdfnmkmftjd.jpg" style="width:100%">
+            </label>
+            <h4>Deeply Devoted Bouquet<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://res.cloudinary.com/ufn/image/upload/c_pad,f_auto,fl_progressive,h_500,w_445/glxswfbk6jy4ravkufku.jpg" style="width:100%">
+            </label>
+            <h4>Thinking of You Bouquet<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://res.cloudinary.com/ufn/image/upload/c_pad,f_auto,fl_progressive,h_500,w_445/eyx5xljmszp09fvp1ftq.jpg" style="width:100%">
+            </label>
+            <h4>Sweet Perfection Bouquet<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://res.cloudinary.com/ufn/image/upload/c_pad,f_auto,fl_progressive,h_500,w_445/b0j1ore6lsk8xv6qprtn.jpg" style="width:100%">
+            </label>
+            <h4>Beloved Bouquet<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://res.cloudinary.com/ufn/image/upload/c_pad,f_auto,fl_progressive,h_500,w_445/xhc3oztiug0nteojt8xu.jpg" style="width:100%">
+            </label>
+            <h4>Happy Blooms Basket<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://res.cloudinary.com/ufn/image/upload/c_pad,f_auto,fl_progressive,h_500,w_445/1610801433608_4.png" style="width:100%">
+            </label>
+            <h4>Fuchsia Boxed Roses<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://res.cloudinary.com/interflora/f_auto,q_auto,t_pnopt12prodlp/products/p-the-delilah-187572-m.jpg" style="width:100%">
+            </label>
+            <h4>The Delilah<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <a href="#contact-container"><button>Add to cart</button></a>
+      </section>
+
+      <section id="Christmas">
+        <h2 class="section-title">Christmas</h2>
+        <div class="wrapper">
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://res.cloudinary.com/ufn/image/upload/c_pad,f_auto,fl_progressive,h_500,w_445/p6w5ntxprbcsgs6xgim5.jpg" style="width:100%">
+            </label>
+            <h4>Christmas Coziness Bouquet<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://res.cloudinary.com/ufn/image/upload/c_pad,f_auto,fl_progressive,h_500,w_445/g0el7hhe8glsyzntn2oy.jpg" style="width:100%">
+            </label>
+            <h4>Holiday Gold Bouquet<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://res.cloudinary.com/ufn/image/upload/c_pad,f_auto,fl_progressive,h_500,w_445/1607979125294_6.jpg" style="width:100%">
+            </label>
+            <h4>Hillcrest Starlight Starbright<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://res.cloudinary.com/ufn/image/upload/c_pad,f_auto,fl_progressive,h_500,w_445/opivgtdutppye0auu5cl.jpg" style="width:100%">
+            </label>
+            <h4>Season's Glow Centerpiece<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          </div>
+          
+          <a href="#contact-container"><button>Add to cart</button></a>
+      </section>
+
+      <section id="Funeral">
+        <h2 class="section-title">Sympathy and Funeral</h2>
+        <div class="wrapper">
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://res.cloudinary.com/ufn/image/upload/c_pad,f_auto,fl_progressive,h_500,w_445/l4frwi1escygxgsaml8t.jpg" style="width:100%">
+            </label>
+            <h4>Blessings of the Earth Easel<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://res.cloudinary.com/ufn/image/upload/c_pad,f_auto,fl_progressive,h_500,w_445/xnssoorwk7xfej7wlevc.jpg" style="width:100%">
+            </label>
+            <h4>Tender Touch Standing Spray<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://res.cloudinary.com/ufn/image/upload/c_pad,f_auto,fl_progressive,h_500,w_445/vu5m4qjr5gfcvi9yc27q.jpg" style="width:100%">
+            </label>
+            <h4>Blooming Bounty Bouquet<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://res.cloudinary.com/ufn/image/upload/c_pad,f_auto,fl_progressive,h_500,w_445/vxxhmwb2wjetn7ixhhlj.jpg" style="width:100%">
+            </label>
+            <h4>White Elegance<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://res.cloudinary.com/ufn/image/upload/c_pad,f_auto,fl_progressive,h_500,w_445/kmy9nfxv27glozir1lfh.jpg" style="width:100%">
+            </label>
+            <h4>Wondrous Nature Bouquet<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://res.cloudinary.com/ufn/image/upload/c_pad,f_auto,fl_progressive,h_500,w_445/uce73a2lkvzzqegl5h3v.jpg" style="width:100%">
+            </label>
+            <h4>Exquisite Tribute Spray<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://res.cloudinary.com/ufn/image/upload/c_pad,f_auto,fl_progressive,h_500,w_445/ddqag9jvkfboagn5xqzh.jpg" style="width:100%">
+            </label>
+            <h4>Sincere Respect Bouquet<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://res.cloudinary.com/ufn/image/upload/c_pad,f_auto,fl_progressive,h_500,w_445/pndnd79xkldpypshzqls.jpg" style="width:100%">
+            </label>
+            <h4>Heartfelt Condolences Arrangement<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <a href="#contact-container"><button>Add to cart</button></a>
+      </section>
+      <section id="New Baby">
+        <h2 class="section-title">New Baby</h2>
+        <div class="wrapper">
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://res.cloudinary.com/ufn/image/upload/c_pad,f_auto,fl_progressive,h_500,w_445/sbzmz0jcnk8r2mcb2uez.jpg" style="width:100%">
+            </label>
+            <h4>Girls Are Great! Bouquet<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://res.cloudinary.com/ufn/image/upload/c_pad,f_auto,fl_progressive,h_500,w_445/neh9iqbluzszeorfcqnv.jpg" style="width:100%">
+            </label>
+            <h4>Big Hug Bouquet<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://res.cloudinary.com/ufn/image/upload/c_pad,f_auto,fl_progressive,h_500,w_445/qi0ggh8u6qmphjq21fe3.jpg" style="width:100%">
+            </label>
+            <h4>Boys Are Best! Bouquet<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          <div class="column">           
+            <label for="Flower-1">
+            <img src="https://res.cloudinary.com/ufn/image/upload/c_pad,f_auto,fl_progressive,h_500,w_445/es3kuyyrlhifr3lnxurx.jpg" style="width:100%">
+            </label>
+            <h4>Best Year™ Basket<br>Price Rs200<input type="checkbox" id="Flower-1" name="flower"></h4>
+          </div>
+          </div>
+          
+          <a href="#contact-container"><button>Add to cart</button></a>
+      </section>
+
+      <!-- end of deals-content -->
+    </article>
+    <article id="contact-container">
+      <section id="info">
+        <div class="about-text">
+          <h3>About Us</h3>
+          <p>Exceptional quality and selection are what you’ll find at NBHS’s Garden. Importing flowers from around the world gives us a large spectrum of fresh flowers to choose from, ensuring your bouquet will be unique and stand out in any crowd. In our store, customers have freedom to select and try different combinations and colors of fresh flowers which we arrange and deliver if needed. Chocolates, balloons or stuffed animals are available creating an even bigger smile as they open the door.</p><br />
+          <ul class="info-list">
+            <li>
+              <h6 class="info-title">Address:</h6>
+              <p>Bachupally, Hyderabad, Telangana</p>
+            </li>
+            <li>
+              <h6 class="info-title">Phone:</h6>
+              <ul>
+                <li>Local: <a href="#">(+91) 589426887</a></li>
+                <li>Toll Free: <a href="#">9684251796</a>
+              </ul>
+            </li>
+            <li>
+              <h6 class="info-title">Hours:</h6>
+              <ul>
+                <li>Mon-Fri: 8:30am to 6:00pm</li>
+                <li>Saturday: 8:30am to 5:00pm</li>
+                <li>Sunday: Closed</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-form">
+          <h2>
+          <form method="GET" action="/addressdetails">
+            <p id="result">Total Number of Items Selected = <p>
+            <script>
+            showChecked();
+            function showChecked(){
+              document.getElementById("result").textContent = "Total Price of Items Selected : "+document.querySelectorAll("input:checked").length * 200;
+            }
+            document.querySelectorAll("input[name=flower]").forEach(i=>{
+            i.onclick = function(){
+              showChecked();
+            }
+            });
+            </script>
+            ONLY CASH ON DELIVERY AVAILABLE!
+            <form method="GET" action="/OrderPlaced">
+              <button>Place Order</button>
+            </form>
+          </form></h2>
+        </div>
+      </section>
+      <!-- end of info -->
+    </article>
+    <!-- end of contact-container  -->
+  </div> 
+  <!--end of content-->
+</div> 
+<!--end of main-container-->
+<div id="footer">
+  <div class="ft-container">
+    <div class="social-media">
+      <h4>Connect With Us:</h4>
+      <div>
+        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-yelp fa-2x" aria-hidden="true"></i>
+      </div>
+    </div>
+    
+    <div class="company-info">
+      <h4>Company:</h4>
+      <p>BHNS's Flower Shop</p>
+      <p>This website is made by BHNS</p>
+      <p>copyright 2022</p>
+      <ul>
+        <li>Products</li>
+        <li>About Us</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>
